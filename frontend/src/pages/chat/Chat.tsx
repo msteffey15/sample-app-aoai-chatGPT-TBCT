@@ -8,7 +8,7 @@ import rehypeRaw from "rehype-raw";
 import uuid from 'react-uuid';
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/Azure.svg";
+import terumo_corp_color from "../../assets/terumo_corp_color.svg";
 
 import {
     ChatMessage,
@@ -550,12 +550,12 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={Azure}
+                                    src={terumo_corp_color}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>Start chatting with ChatBCT! </h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions about Terumo-related inquiries and has base GPT-3.5 capabilities as well. </h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
@@ -573,7 +573,7 @@ const Chat = () => {
                                                         citations: parseCitationFromMessage(messages[index - 1]),
                                                     }}
                                                     onCitationClicked={c => onShowCitation(c)}
-                                                />
+                                                /> 
                                             </div> : answer.role === "error" ? <div className={styles.chatMessageError}>
                                                 <Stack horizontal className={styles.chatMessageErrorContent}>
                                                     <ErrorCircleRegular className={styles.errorIcon} style={{color: "rgba(182, 52, 67, 1)"}} />
