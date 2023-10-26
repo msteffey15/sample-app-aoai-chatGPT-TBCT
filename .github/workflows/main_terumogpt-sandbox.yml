@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'TerumoGPT-Sandbox'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D298446BD1C549908452A5EDED7830D9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0224E0FB52EE4C328E14D7A8392C62BB }}
