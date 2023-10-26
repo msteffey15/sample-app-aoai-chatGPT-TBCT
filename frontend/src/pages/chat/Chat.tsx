@@ -8,7 +8,7 @@ import rehypeRaw from "rehype-raw";
 import uuid from 'react-uuid';
 
 import styles from "./Chat.module.css";
-import terumo_corp_color from "../../assets/terumo_corp_color.svg";
+import terumo_logo from "../../assets/terumo_logo.svg";
 
 import {
     ChatMessage,
@@ -550,7 +550,7 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={terumo_corp_color}
+                                    src={terumo_logo}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
